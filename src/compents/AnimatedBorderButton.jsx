@@ -1,7 +1,7 @@
 
 
 export const AnimatedBorderButton = (
-{children}
+{children,onClick}
 ) => {
     return(
         <button
@@ -12,6 +12,7 @@ export const AnimatedBorderButton = (
         disabled:opacity-50 disabled:cursor-not-allowed group 
         px-8 py-4 text-lg font-medium rounded-full overflow-visible 
         animated-border"
+      onClick={onClick}
     >
       {/* Animated SVG Border */}
       <svg

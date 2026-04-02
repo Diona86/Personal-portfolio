@@ -1,28 +1,28 @@
 import { ArrowUpRight, GithubIcon } from "lucide-react"
 import { AnimatedBorderButton } from "../compents/AnimatedBorderButton"
  const projects=[
-    {   title:"项目一",
-        description:"描述",
-        image:"/image.png",
-        tags:["React","JavaScript"],
+    {   title:"多人在线Cavans",
+        description:"这是一个基于 Next.js 和 Fabric.js 构建的协作式设计工具，项目支持实时协作、多用户光标、形状绘制、图层管理等核心功能。",
+        image:"/pro1.png",
+        tags:["React","TypeScript","Next.js","Liveblock","fabric","Tailwind CSS"],
+        link:"/",
+        github:"#"
+    },
+    {   title:"可拖拽任务看板",
+        description:"一个基于 React + TypeScript 构建的看板应用，支持拖拽操作和实时任务管理。",
+        image:"/pro2.png",
+        tags:["React","TypeScript","ZuStand","Tailwind CSS","dnd-kit"],
         link:"#",
         github:"#"
     },
-    {   title:"项目er",
-        description:"描述",
-        image:"image.png",
-        tags:["React","JavaScript"],
+    {   title:"电子商务网站",
+        description:"一个基于 React + TypeScript 构建的电子商务网站，包括产品展示、购物车等功能。",
+        image:"/pro3.png",
+        tags:["React","JavaScript","Router","Context"],
         link:"#",
         github:"#"
     },
-    {   title:"项目san",
-        description:"描述",
-        image:"/image.png",
-        tags:["React","JavaScript"],
-        link:"#",
-        github:"#"
-    },
-    {   title:"项目si",
+    {   title:"项目四",
         description:"描述",
         image:"/image.png",
         tags:["React","JavaScript"],
@@ -77,13 +77,13 @@ export const Projects = () => {
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
-                    href={project.link}
+                    //href={project.link}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
-                    href={project.github}
+                    //href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <GithubIcon className="w-5 h-5" />

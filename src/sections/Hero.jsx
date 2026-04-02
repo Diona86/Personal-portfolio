@@ -1,9 +1,4 @@
-import {
-  ArrowRight,
-  ChevronDown,
-  Download,
-  GithubIcon,
-} from "lucide-react";
+import { ArrowRight, ChevronDown, Download, GithubIcon } from "lucide-react";
 import { Button } from "../compents/Button";
 import { AnimatedBorderButton } from "../compents/AnimatedBorderButton";
 import { WeixinMiniAppIcon } from "../compents/WeChat";
@@ -21,6 +16,13 @@ const skills = [
   "Vite",
 ];
 export const Hero = () => {
+  const handleDownload = () => {
+    console.log("下载简历");
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.download = "相入杉.pdf";
+    link.click();
+  };
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
@@ -82,7 +84,7 @@ export const Hero = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton onClick={handleDownload}>
                 下载简历
                 <Download />
               </AnimatedBorderButton>
@@ -144,8 +146,8 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/blac.jpg"
-                  alt="马剃天星爱"
+                  src="/hero.png"
+                  alt="相入杉"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
                 {/*浮动标签*/}
